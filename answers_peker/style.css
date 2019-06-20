@@ -1,0 +1,164 @@
+/* HEADER */
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+/* MAIN */
+
+main {
+    margin-top: 170px
+}
+.blue {
+    color: blue;
+}
+
+/* IMAGES SECTION */
+
+div.background {
+    width: 298px;
+    height: 200px;
+    background: url("images/tree.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.background, img {
+    display: inline-block;
+}
+
+img[alt="Image 2"] {
+    padding: 5px;
+    border: 2px solid blue;
+}
+
+/* SPAN */
+
+span:nth-child(even) {
+  background: green;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+
+.mediaquery {
+background-color: blue;
+background-size: 5rem x 5rem;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+.mediaquery {
+background-color: yellow;
+background-size: 7rem x 7rem;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+
+.mediaquery {
+background-color: red;
+background-size: 10rem x 10rem;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+
+.mediaquery {
+background-color: purple;
+background-size: 12rem x 12rem;
+}
+}
+
+/* POSITIONING */
+
+.box {
+    position: relative;
+}
+
+.relative {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+/* FLEXBOX */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    flex-grow:1;
+}
+
+/* GRID */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: (3, 1fr 1fr 1fr);
+    grid-template-rows: (4, 1fr 1fr 1fr 1fr);
+    border: 2px solid black;
+    grid-gap: 5px;
+}
+
+.cell {
+  border: 1px solid blue;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.two {
+   grid-row-start: 2; 
+   grid-row-end: 4; 
+}
+
+.three {
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+}
+
+.seven {
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+    grid-column-start: 3; 
+    grid-column-end: 5; 
+}
+
+/* TASK 13 */
+
+.my-style {
+color: olivedrab;
+font-size: 25px;
+font-family: monospace;
+}
+
+/* DESCENDANTS */
+
+footer ul li a:hover {
+    color: green;
+}
+
+footer a:visited {
+    color: red;
+}
